@@ -1,0 +1,40 @@
+{
+  "name": "summernote-ext-tableprops",
+  "version": "0.1.0",
+  "description": "Table, row and cell properties for Summernote: width, borders, colors, alignment, padding and header rows.",
+  "keywords": [
+    "summernote",
+    "summernote-plugin",
+    "wysiwyg",
+    "table",
+    "table-properties"
+  ],
+  "license": "MIT",
+  "author": "Kevin Bruce",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinbruce/summernote-ext-tableprops.git"
+  },
+  "homepage": "https://github.com/kevinbruce/summernote-ext-tableprops#readme",
+  "bugs": "https://github.com/kevinbruce/summernote-ext-tableprops/issues",
+  "main": "src/summernote-ext-tableprops.js",
+  "style": "src/summernote-ext-tableprops.css",
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "peerDependencies": {
+    "jquery": ">=3.0.0",
+    "summernote": ">=0.8.18"
+  },
+  "devDependencies": {
+    "jquery": "^3.7.1",
+    "jsdom": "^24.1.0",
+    "summernote": "0.9.1",
+    "vitest": "^1.6.0"
+  },
+  "scripts": {
+    "test": "vitest run"
+  }
+}

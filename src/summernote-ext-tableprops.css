@@ -1,0 +1,91 @@
+/*
+ * summernote-ext-tableprops: the table properties dialog.
+ *
+ * Every name is note-tableprops- prefixed, so the dialog looks the same with
+ * Summernote lite, bs3, bs4 or bs5. Colors are custom properties; override
+ * them on .note-tableprops-dialog.
+ */
+
+.note-tableprops-dialog {
+  --note-tp-border: #dee2e6;
+  --note-tp-muted: #5c636a;
+  --note-tp-label: #343a40;
+}
+
+.note-tableprops-dialog .modal-dialog,
+.note-tableprops-dialog .note-modal-content {
+  max-width: 600px;
+}
+
+.note-tableprops-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 8px 14px;
+  margin: 0 0 12px;
+  padding: 8px 12px 12px;
+  border: 1px solid var(--note-tp-border);
+  border-radius: 4px;
+}
+
+.note-tableprops-group[hidden] {
+  display: none;
+}
+
+.note-tableprops-group > legend {
+  float: none; /* Bootstrap floats legends full width */
+  width: auto;
+  margin: 0;
+  padding: 0 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--note-tp-label);
+}
+
+.note-tableprops-field {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.note-tableprops-field > label,
+.note-tableprops-check {
+  margin: 0;
+  font-size: 13px;
+  color: var(--note-tp-label);
+}
+
+.note-tableprops-field .form-control {
+  width: auto;
+  min-width: 90px;
+}
+
+.note-tableprops-field input[type="number"] {
+  width: 80px;
+  min-width: 0;
+}
+
+.note-tableprops-field input[type="color"] {
+  width: 44px;
+  height: 32px;
+  padding: 2px;
+  border: 1px solid var(--note-tp-border);
+  border-radius: 4px;
+  background: #fff;
+}
+
+.note-tableprops-check {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-basis: 100%;
+}
+
+.note-tableprops-notable {
+  margin: 12px 0;
+  color: var(--note-tp-muted);
+}
+
+.note-tableprops-icon {
+  vertical-align: -.125em;
+}
