@@ -89,3 +89,11 @@
 .note-tableprops-icon {
   vertical-align: -.125em;
 }
+
+/* A site's theme may restyle every label (uppercase, tracked out); the
+   dialog keeps its own. */
+.note-tableprops-dialog label,
+.note-tableprops-dialog legend {
+  text-transform: none;
+  letter-spacing: normal;
+}
